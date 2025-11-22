@@ -1,0 +1,363 @@
+.buttonLabel {
+  font-family: "NexaRound", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2c0b00;
+  opacity: 0.6;
+  margin-top: -12px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.metacontainer {
+  position: relative;
+  padding: 8.5px 38.4px;
+  background-color: #fff5e2;
+  border-radius: 19px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  z-index: 0;
+  position: relative;
+}
+
+.metaimage {
+  height: 16px;
+  width: 28px;
+}
+
+.metaText {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "NexaRound", Arial, sans-serif;
+  color: #000;
+}
+
+.heroText {
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -4px;
+  padding-top: 120px;
+  color: #2c0b00;
+  font-family: "NexaRound", Arial, sans-serif;
+  flex-direction: column;
+  padding: 20px 0;
+
+  @media (max-width: 1150px) {
+    font-size: 72px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: unset;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -1.6px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 15px 0px;
+    text-align: center;
+    position: relative;
+  }
+}
+
+.inlineIcon {
+  align-items: center;
+  gap: 8px;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.inlineIcon img {
+  width: 83px;
+  height: 83px;
+  transform: scale(2);
+  display: inline-block;
+  vertical-align: middle;
+
+  @media (max-width: 768px) {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+  }
+}
+
+.herorocket {
+  width: var(--w);
+  height: auto;
+  margin: 0 -5px;
+}
+
+.sparkle {
+  @media (max-width: 768px) {
+    position: absolute;
+  }
+}
+
+.textcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+
+  @media (max-width: 768px) {
+    gap: 21px;
+    display: none;
+  }
+}
+
+.griditem {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  align-items: center;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.buttoncontainer {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  text-decoration: none;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.button {
+  padding: 8px 105px;
+  border-radius: 100px;
+  background-color: #e4321c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: #f6eddc;
+  cursor: pointer;
+  font-family: "NexaRound", Arial, sans-serif;
+  text-decoration: none;
+}
+
+.imageWrapper1 {
+  display: flex;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.aspectVideo {
+  aspect-ratio: 1920 / 1080;
+}
+
+.image {
+  aspect-ratio: 1920 / 1080;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: aspect-ratio 0.3s ease;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+  @media (max-width: 640px) {
+    opacity: 1;
+    border-radius: 12px;
+  }
+}
+
+.textcontainerstart {
+  display: none;
+
+  @media (max-width: 768px) {
+    gap: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.heroTextStart {
+  color: #2c0b00;
+  max-width: unset;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -1.6px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "NexaRound", Arial, sans-serif;
+  padding: 0px 0px 15px 0px;
+  position: relative;
+  text-align: center;
+
+  @media (max-width: 576px) {
+    text-align: left;
+  }
+}
+
+/* .inlineIconStart {
+  align-items: center;
+  gap: 8px;
+  display: inline-block;
+  vertical-align: baseline;
+} */
+
+.inlineIconStart img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.herorocketStart {
+  width: 52px;
+  height: 52px;
+}
+
+.sparkleStart {
+  width: 48px;
+  height: 48px;
+  margin: 0 5px;
+}
+
+.imageWrapper {
+  aspect-ratio: 16/9;
+  position: relative;
+  display: none;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.videoContainer {
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.image {
+  aspect-ratio: 1920 / 1080;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: aspect-ratio 0.3s ease;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+  @media (max-width: 640px) {
+    opacity: 1;
+    border-radius: 12px;
+  }
+}
+
+.buttonScontainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.button1Start {
+  border-radius: 100px;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: #f6eddc;
+  cursor: pointer;
+  font-family: "NexaRound", Arial, sans-serif;
+  width: 100%;
+  padding: 8px 20px;
+}
+
+.buttonLabelMobile {
+  font-family: "NexaRound", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2c0b00;
+  opacity: 0.6;
+  text-align: center;
+  margin: 8px;
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.metacontainerStart {
+  padding: 13px 38.4px 10px 38.4px;
+  background-color: #fff5e2;
+  border-radius: 19px;
+  border: solid 1px #ffebc3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: center;
+}
+
+.metaimageStart {
+  height: 14px;
+  width: 22px;
+}
+
+.metaTextStart {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "NexaRound", Arial, sans-serif;
+  color: #000;
+}
+
+.subText {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-top: 15px;
+    gap: 12px;
+  }
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.buttoncontainer {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  text-decoration: none;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "redirects": [
+        {
+            "source": "/landing",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/landing/",
+            "destination": "/",
+            "permanent": true
+        },
+        {
+            "source": "/privacy-policy",
+            "destination": "https://app.withblip.com/privacy-policy",
+            "permanent": true
+        },
+        {
+            "source": "/privacy-policy/",
+            "destination": "https://app.withblip.com/privacy-policy",
+            "permanent": true
+        },
+        {
+            "source": "/terms-of-service",
+            "destination": "https://app.withblip.com/terms-of-service",
+            "permanent": true
+        },
+        {
+            "source": "/terms-of-service/",
+            "destination": "https://app.withblip.com/terms-of-service",
+            "permanent": true
+        }
+    ]
+}

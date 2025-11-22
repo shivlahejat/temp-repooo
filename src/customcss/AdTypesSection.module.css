@@ -1,0 +1,323 @@
+.cardHeading {
+  font-family: "NexaRound", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.64px;
+  text-align: center;
+  color: #2e6bad;
+  margin: 0 auto;
+
+  @media (max-width: 640px) {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+  }
+
+  @media (max-width: 576px) {
+    text-align: left;
+  }
+}
+
+.cardPara {
+  max-width: 596px;
+  opacity: 0.6;
+  font-family: "NexaRound", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: -0.36px;
+  text-align: center;
+  color: #2e6bad;
+  margin: 12px auto 0px auto;
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+
+  @media (max-width: 576px) {
+    text-align: left;
+    margin: 16px auto 0px auto;
+  }
+}
+
+.cardHeader {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+
+  @media (max-width: 1200px) {
+    gap: 31px;
+  }
+
+  @media (max-width: 640px) {
+    gap: 23px;
+  }
+}
+
+.cardCarouselAuto {
+  width: 100%;
+  max-width: 261.7px;
+  min-height: 262.5px;
+  background: #ff9a9c;
+  border-radius: 20px;
+  padding: 8px 26px 41px 14px;
+  border: 1px solid #0d0900;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  gap: 36px;
+
+  @media (max-width: 640px) {
+    max-width: 335px;
+    min-height: unset;
+    padding: 8px 35px 34px 11px;
+    height: 100%;
+    gap: 18px;
+    padding-top: 15px;
+  }
+}
+
+.cardCarouselAuto::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #0d0900;
+  background: #ffa755;
+  border-radius: 20px;
+  z-index: -1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 640px) {
+    right: 7px;
+  }
+}
+
+.cardCarouselAuto1 {
+  width: 100%;
+  max-width: 261.7px;
+  min-height: 262.5px;
+  background: #ff9a9c;
+  border-radius: 20px;
+  padding: 8px 23px 28px 14px;
+  border: 1px solid #0d0900;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  gap: 24px;
+
+  @media (max-width: 640px) {
+    max-width: 335px;
+    min-height: unset;
+    height: 100%;
+    gap: 15px;
+    padding: 14px 29px 18px 11px;
+  }
+}
+
+.cardCarouselAuto1::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #0d0900;
+  background: #2e6bad;
+  border-radius: 20px;
+  z-index: -1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 640px) {
+    right: 7px;
+  }
+}
+
+.images {
+  max-width: 220px;
+  width: 100%;
+  display: flex;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.mobileimages {
+  display: none;
+
+  @media (max-width: 640px) {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.headSVG {
+  height: 18px;
+  width: 18px;
+}
+
+.cardsHeading {
+  font-family: "NexaRound", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: -0.36px;
+  color: #fff;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.cardsHeader {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 5px;
+  align-items: center;
+}
+
+.cardsPara {
+  opacity: 0.8;
+  font-family: "NexaRound";
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.28px;
+  text-align: left;
+  color: #fff;
+}
+
+.cardsPara1 {
+  opacity: 0.8;
+  font-family: "NexaRound";
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.28px;
+  text-align: left;
+  color: #fff;
+  max-width: 209px;
+
+  @media (max-width: 640px) {
+    max-width: 269px;
+  }
+}
+
+.Cards {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 1200px) {
+    width: 70%;
+    margin: 0 auto;
+    gap: 37px 33px;
+  }
+
+  @media (max-width: 850px) {
+    width: 100%;
+  }
+
+  @media (max-width: 640px) {
+    gap: 29px;
+  }
+}
+
+.cardShopDynamic {
+  width: 100%;
+  max-width: 261.7px;
+  min-height: 262.5px;
+  background: #ff9a9c;
+  border-radius: 20px;
+  padding: 8px 41px 43px 14px;
+  border: 1px solid #0d0900;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  gap: 32px;
+
+  @media (max-width: 640px) {
+    max-width: 335px;
+    min-height: unset;
+    padding: 8px 32px 32px 15px;
+    height: 100%;
+    gap: 12px;
+    padding-top: 15px;
+  }
+}
+
+.cardShopDynamic::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #0d0900;
+  background: #2e6bad;
+  border-radius: 20px;
+  z-index: -1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 640px) {
+    right: 7px;
+  }
+}
+
+.cardShopDynamic1 {
+  width: 100%;
+  max-width: 261.7px;
+  min-height: 262.5px;
+  background: #ff9a9c;
+  border-radius: 20px;
+  padding: 8px 32px 40px 17px;
+  border: 1px solid #0d0900;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  gap: 49px;
+
+  @media (max-width: 640px) {
+    max-width: 335px;
+    min-height: unset;
+    height: 100%;
+    gap: 13px;
+    padding: 8px 29px 25px 13px;
+  }
+}
+
+.cardShopDynamic1::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #0d0900;
+  background: #ffa755;
+  border-radius: 20px;
+  z-index: -1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 640px) {
+    right: 7px;
+  }
+}

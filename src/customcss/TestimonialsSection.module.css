@@ -1,0 +1,388 @@
+.testimonialSection {
+  margin-top: 20px;
+  margin-bottom: 160px;
+  text-align: center;
+  position: relative;
+
+  @media (max-width: 768px) {
+    text-align: left;
+    margin-bottom: 60px;
+    margin-top: -20px;
+  }
+}
+
+
+.testimonialSection {
+  margin-top: 20px;
+  margin-bottom: 160px;
+  text-align: center;
+  position: relative;
+
+  @media (max-width: 768px) {
+    text-align: left;
+    margin-bottom: 60px;
+    margin-top: -20px;
+  }
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  @media (max-width: 1068px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.testimonialContainer {
+  position: relative;
+  z-index: 1;
+  background: #ff8888;
+  border: 1px solid #000;
+  border-radius: 25px;
+  padding: 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+
+  @media (max-width: 768px) {
+    padding: 20px 25px;
+    min-height: 300px;
+  }
+}
+
+.testimonialSubHeading {
+  display: inline-block;
+  padding: 6px 40px;
+  border: 2px solid #ff41b6;
+  border-radius: 100px;
+  font-family: "NexaRound";
+  font-weight: 900;
+  font-size: 16px;
+  color: #e6038f;
+  opacity: 0.7;
+  text-align: left;
+  margin-top: 40px;
+
+  @media (max-width: 640px) {
+    font-size: 14px;
+    margin-bottom: -10px;
+  }
+}
+
+.testimonialHeading {
+  font-family: "NexaRound", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.64px;
+  text-align: center;
+  color: #e6038f;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  max-width: 600px;
+
+  @media (max-width: 640px) {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 576px) {
+    text-align: left;
+  }
+}
+
+.testimonialContainer.color1 {
+  background: #ff8888;
+}
+
+.testimonialContainer.color2 {
+  background: #88b3ff;
+}
+
+.testimonialContainer.color3 {
+  background: #88ffb3;
+}
+
+.testimonialContainer::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -10px;
+  right: 6px;
+  bottom: 8px;
+  background: #1d1d1d;
+  border-radius: 25px;
+  z-index: -1;
+  padding: 10px;
+}
+
+.testimonialContainer:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  min-height: 300px;
+}
+
+.testimonialQuote {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fffbf3;
+  line-height: 1.4;
+  margin: 0 0 auto 0;
+  font-family: "NexaRound", sans-serif;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #e7e7e7fa;
+    width: 90%;
+    font-weight: 800;
+  }
+}
+
+.testimonialProfile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    justify-content: left;
+    margin-bottom: 12px;
+  }
+}
+
+.profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.profileName {
+  font-size: 16px;
+  font-weight: 800;
+  color: #a9a9a9;
+  font-family: "NexaRound", sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    color: #ccccccfa;
+  }
+}
+
+.companyTitle {
+  font-size: 14px;
+  color: #ccccccfa;
+  font-family: "NexaRound", sans-serif;
+  font-weight: 800;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    color: #ccccccfa;
+  }
+}
+
+.companyLogo {
+  height: 40px;
+  width: 150px;
+  opacity: 0.8;
+}
+
+.content {
+  max-width: 804px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-direction: column;
+  scroll-margin-top: 120px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 100%;
+    padding: 0 0;
+  }
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.head {
+  opacity: 0.7;
+  border-radius: 100px;
+  border: solid 2px #7f0f91;
+  padding: 10px 40px;
+  font-size: 24px;
+  font-weight: 900;
+  color: #7f0f91;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 26px;
+  gap: 10px;
+  line-height: normal;
+  font-family: "NexaRound";
+}
+
+@media (max-width: 768px) {
+  .head {
+    font-size: 16px;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 37px;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .head {
+    width: 100%;
+    justify-content: center;
+    opacity: 1;
+  }
+}
+
+.title1 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.64px;
+  text-align: center;
+  color: #7f0f91;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .title1 {
+    margin-bottom: 14px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .title1 {
+    text-align: left;
+  }
+}
+
+.subtitle1 {
+  max-width: 618px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: -0.36px;
+  text-align: center;
+  color: #7f0f91;
+  opacity: 0.6;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .subtitle1 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .subtitle1 {
+    font-size: 16px;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 20px;
+  margin-top: 33px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    margin-top: 22px;
+  }
+}
+
+.shadowButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 5px 12px 5px;
+  min-width: 231px;
+  border: 1px solid #a556ae;
+  border-radius: 16px;
+  color: #7f0f91;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 6px 6px 0 #6c0a77;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .shadowButton {
+    width: 100%;
+    place-content: center;
+  }
+}
+
+.shadowWrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .shadowWrapper {
+    margin: 0 auto;
+    min-width: 207px;
+  }
+}
+
+.shadowButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 8px 8px 0 #49034f;
+}
+
+.myImg {
+  width: 30px;
+  height: 30px;
+}
+
+.rocketIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.groupText {
+  width: 100%;
+}
